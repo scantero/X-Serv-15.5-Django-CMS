@@ -10,4 +10,5 @@ urlpatterns = patterns('',
     url(r'^(\d+)$', 'cms.views.mostrarPagina'),
     url(r'^nuevocontenido/(.+)\/(.+)$', 'cms.views.nuevoContenido'),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'.*', 'cms.views.notfound'),
 )
